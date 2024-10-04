@@ -1,13 +1,15 @@
 .main_part_of_authorization{
     background-color: #1F1F1F;
     margin-top: 241px;
-    margin-left: 13px;
+    margin-left: 15px;
     height: 295px;
     width: 333px;
     border-radius: 15px;
     align-items: center;
 
 }
+
+
 
 .form_of_user {
     display: flex;
@@ -36,8 +38,9 @@
 }
 
 .name{
-
-
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
     width: 230px;
     height: 5%;
     align-self: center;
@@ -45,6 +48,9 @@
 }
 
 .pass{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
     width: 230px;
     height: 5%;
     align-self: center;
@@ -54,11 +60,10 @@
 }
 
 .forgot_pass{
-
-
     font-size: 9px;
     padding: 10px;
     margin-left: 214px;
+    margin-top: 10px;
     color: #999999;
 }
 
@@ -70,16 +75,18 @@
     align-self: center;
     border: none;
     border-radius: 15px;
+    margin-top: 25px;
 }
 
 .text_user{
     font-size: 7px;
     text-align: center;
     text-wrap: balance;
-    padding-bottom: 15px;
-    padding-top: 15px;
+
+    padding-top: 25px;
     word-spacing: normal;
     color: #919191;
+
 }
 
 .a{

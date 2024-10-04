@@ -1,14 +1,14 @@
 import './App.css';
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
-import Authorization from "./components/authorization/registration";
+import Authorization from "./components/authorization/authorization";
 
 export default function App() {
   return (
     <div>
         <Header />
         <Authorization />
-        <Footer />
+        {0 && <Footer />}
     </div>
   );
 }
