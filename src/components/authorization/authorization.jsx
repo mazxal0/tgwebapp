@@ -1,13 +1,12 @@
 import classes from "./Authorization.module.css"
+import Gmail_logo from '../../images/gmail_logo.png'
+import Mail_ya_logo from '../../images/vk_logo.png'
+import VK_logo from '../../images/mail-ya_logo.png'
 
 export default function Authorization() {
-
     return (
         <div className={classes.main_part_of_authorization}>
-            <p className={classes.p}>
-                <span className={classes.RU}>RU</span>
-                <span className={classes.seen}>seen</span>
-            </p>
+
             <h1 className={classes.h1}>
                 Вход
             </h1>
@@ -22,6 +21,21 @@ export default function Authorization() {
                 что ознакомились с документом "<a href="https://ya.ru" className={classes.a}>Политика
                     конфидиальности</a>".
             </h6>
+
+            <h3 className={classes.entrance}>Войти через</h3>
+
+            <div className={classes.logos}>
+                <a className={classes.a} href="https://ya.ru">
+                    <img className={classes.img} src={Gmail_logo} alt={'252352'}/>
+                </a>
+                <a className={classes.a} href="https://ya.ru">
+                    <img className={classes.img} src={VK_logo} alt={'2222222'}/>
+                </a>
+                <a className={classes.a} href="https://ya.ru">
+                    <img className={classes.img} src={Mail_ya_logo} alt={'111111'}/>
+                </a>
+            </div>
+
             <div className={classes.foot}></div>
         </div>
     )

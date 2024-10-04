@@ -1,34 +1,18 @@
 .main_part_of_authorization{
     background-color: #1F1F1F;
-    margin-top: 185px;
-    margin-left: 15px;
-    height: 295px;
-    width: 333px;
+
+    margin-top: 110px;
+    margin-left: 62.5px;
+    height: 350px;
+    width: 250px;
     border-radius: 15px;
     align-items: center;
-    margin-bottom: 50px;
+
 }
-
-
 
 .form_of_user {
     display: flex;
     flex-direction: column;
-}
-
-.p{
-    font-size: 12px;
-    text-align: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.p .RU{
-    color: #6EADFF;
-}
-
-.p .seen{
-    color: white;
 }
 
 .h1{
@@ -36,17 +20,21 @@
     text-align: center;
     margin-top: 0.5%;
     font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 .name{
     background: transparent;
     border: none;
     border-bottom: 1px solid #6EADFF;
-    width: 230px;
-    height: 5%;
+    width: 180px;
+    height: 15px;
     align-self: center;
     color: #C9C9C999;
     outline: none;
+    font-size: 11px;
+    text-align: center;
 }
 
 
@@ -54,21 +42,24 @@
     background: transparent;
     border: none;
     border-bottom: 1px solid #6EADFF;
-    width: 230px;
-    height: 5%;
+    width: 180px;
+    height: 15px;
     align-self: center;
-    margin-top: 3.5%;
+    margin-top: 35px;
     opacity: 100%;
     color: #C9C9C999;
     outline: none;
+    font-size: 11px;
+    text-align: center;
 }
 
 .forgot_pass{
     font-size: 9px;
-    padding: 10px;
-    margin-left: 206px;
-    margin-top: 10px;
+    text-align: right;
+    padding-top: 35px;
+    padding-right: 35px;
     color: #999999;
+    padding-bottom: 10px;
 }
 
 .button{
@@ -78,7 +69,7 @@
     height: 32px;
     align-self: center;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-top: 25px;
 }
 
@@ -97,11 +88,34 @@
     color: #919191;
 }
 
+.entrance{
+    font-size: 13px;
+    text-align: center;
+    color: #999999;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+
 .foot{
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 380px;
+    width: 375px;
     height: 20px;
     background-color: #1F1F1F;
     border-top-right-radius: 5px;
