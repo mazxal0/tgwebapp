@@ -8,7 +8,7 @@ export default function App() {
     <div>
         <Header />
         <Authorization />
-        {/*<Footer />*/}
+        <Footer />
     </div>
   );
 }
