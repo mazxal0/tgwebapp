@@ -1,13 +1,12 @@
 .main_part_of_authorization{
     background-color: #1F1F1F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     margin-top: 110px;
     margin-left: 62.5px;
     height: 350px;
     width: 250px;
     border-radius: 15px;
+
 
 }
 
@@ -72,14 +71,16 @@
     border: none;
     border-radius: 5px;
     margin-top: 25px;
+    margin-bottom: 0;
 }
 
 .text_user{
     font-size: 7px;
     text-align: center;
     text-wrap: balance;
-
-    padding-top: 25px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 20px;
     word-spacing: normal;
     color: #919191;
 
