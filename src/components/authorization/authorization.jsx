@@ -22,6 +22,7 @@ export default function Authorization() {
                 что ознакомились с документом "<a href="https://ya.ru" className={classes.a}>Политика
                     конфидиальности</a>".
             </h6>
+            <div className={classes.foot}></div>
         </div>
     )
 

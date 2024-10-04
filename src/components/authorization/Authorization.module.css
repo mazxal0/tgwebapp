@@ -1,12 +1,12 @@
 .main_part_of_authorization{
     background-color: #1F1F1F;
-    margin-top: 241px;
+    margin-top: 185px;
     margin-left: 15px;
     height: 295px;
     width: 333px;
     border-radius: 15px;
     align-items: center;
-
+    margin-bottom: 50px;
 }
 
 
@@ -17,6 +17,7 @@
 }
 
 .p{
+    font-size: 12px;
     text-align: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -40,29 +41,32 @@
 .name{
     background: transparent;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #6EADFF;
     width: 230px;
     height: 5%;
     align-self: center;
     color: #C9C9C999;
+    outline: none;
 }
+
 
 .pass{
     background: transparent;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #6EADFF;
     width: 230px;
     height: 5%;
     align-self: center;
     margin-top: 3.5%;
     opacity: 100%;
     color: #C9C9C999;
+    outline: none;
 }
 
 .forgot_pass{
     font-size: 9px;
     padding: 10px;
-    margin-left: 214px;
+    margin-left: 206px;
     margin-top: 10px;
     color: #999999;
 }
@@ -91,4 +95,15 @@
 
 .a{
     color: #919191;
+}
+
+.foot{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 355px;
+    height: 20px;
+    background-color: #1F1F1F;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
