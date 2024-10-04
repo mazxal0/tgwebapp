@@ -1,0 +1,24 @@
+.head{
+    position: fixed;
+    width: 380px;
+    height: 87px;
+    background-color: #141414;
+    font-size: 20px;
+    top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.p{
+    text-align: center;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.RU{
+    color: #6EADFF;
+}
+
+.seen{
+    color: #fff;
+}

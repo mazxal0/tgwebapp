@@ -1,0 +1,15 @@
+.footer{
+    background-color: lightgray;
+    color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 2px;
+    display: flex;
+    height: 7%;
+}
+
+.container{
+    padding-top: 20px;
+    padding-left: 20px;
+}
