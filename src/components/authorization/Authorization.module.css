@@ -1,0 +1,87 @@
+.main_part_of_authorization{
+    background-color: #1F1F1F;
+    margin-top: 241px;
+    margin-left: 13px;
+    height: 295px;
+    width: 333px;
+    border-radius: 15px;
+    align-items: center;
+
+}
+
+.form_of_user {
+    display: flex;
+    flex-direction: column;
+}
+
+.p{
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.p .RU{
+    color: #6EADFF;
+}
+
+.p .seen{
+    color: white;
+}
+
+.h1{
+    color: white;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: 20px;
+}
+
+.name{
+
+
+    width: 230px;
+    height: 5%;
+    align-self: center;
+    color: #C9C9C999;
+}
+
+.pass{
+    width: 230px;
+    height: 5%;
+    align-self: center;
+    margin-top: 3.5%;
+    opacity: 100%;
+    color: #C9C9C999;
+}
+
+.forgot_pass{
+
+
+    font-size: 9px;
+    padding: 10px;
+    margin-left: 214px;
+    color: #999999;
+}
+
+.button{
+    background-color: #6EADFF;
+    color: #ffffff;
+    width: 207px;
+    height: 32px;
+    align-self: center;
+    border: none;
+    border-radius: 15px;
+}
+
+.text_user{
+    font-size: 7px;
+    text-align: center;
+    text-wrap: balance;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    word-spacing: normal;
+    color: #919191;
+}
+
+.a{
+    color: #919191;
+}
