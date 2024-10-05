@@ -33,7 +33,7 @@ export default function Authorization() {
             </div>
 
             <div className={classes.register}>
-                Ещё нет аккаунта?<a href={'https://ya.ru'}> Зарегистрироваться</a>
+                Ещё нет аккаунта? <a href={'https://ya.ru'}>Зарегистрироваться</a>
             </div>
 
             <div className={classes.foot}></div>
