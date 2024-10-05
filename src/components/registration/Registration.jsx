@@ -3,7 +3,7 @@ import styles from './Registration.module.css';
 import gmailLogo from '../../images/icons8-gmail-48.png';
 import vkLogo from '../../images/icons8-vk-48.png';
 
-const Registration = () => {
+export default function Registration ({setWeb}) {
     return (
         <div className={styles.container}>
             <div className={styles.formContainer}>
@@ -45,11 +45,10 @@ const Registration = () => {
                 </div>
 
                 <p className={styles.loginLink}>
-                    Уже есть аккаунт? <a href="/login">Войти</a>
+                    Уже есть аккаунт? <a href="#" onClick={() => setWeb('authorization')} >Войти</a>
                 </p>
             </div>
         </div>
     );
 };
 
-export default Registration;

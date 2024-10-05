@@ -4,17 +4,25 @@ import Header from "./components/header/header";
 import Authorization from "./components/authorization/authorization";
 import Registration from "./components/registration/Registration";
 
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 
 
 export default function App() {
     const [currentWeb, setCurrentWeb] = useState('authorization');
 
+    const setWeb = (newWeb) => {
+        setCurrentWeb(newWeb);
+    }
+
+    useEffect(() => {
+        setCurrentWeb('registration');
+    }, []);
+
     const render = () => {
         switch (currentWeb) {
             case 'authorization':
-                return <Authorization currentWeb={currentWeb} setCurrentWeb={setCurrentWeb}/>;
+                return <Authorization setWeb={setWeb}/>;
             case 'registration':
                 return <Registration/>;
             default:
