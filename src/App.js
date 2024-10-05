@@ -8,7 +8,7 @@ export default function App() {
     <div>
         <Header />
         <Authorization />
-        {false && <Footer />}
+        {0 && <Footer />}
     </div>
   );
 }
