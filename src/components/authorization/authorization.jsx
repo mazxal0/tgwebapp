@@ -2,7 +2,7 @@ import classes from "./Authorization.module.css"
 import Gmail_logo from '../../images/icons8-gmail-48.png'
 import VK_logo from '../../images/icons8-vk-48.png'
 
-export default function Authorization() {
+export default function Authorization({currentWeb, setCurrentWeb}) {
     return (
         <div className={classes.main_part_of_authorization}>
 
@@ -33,7 +33,7 @@ export default function Authorization() {
             </div>
 
             <div className={classes.register}>
-                Ещё нет аккаунта? <a href={'https://ya.ru'}>Зарегистрироваться</a>
+                Ещё нет аккаунта? <a href="#" onClick={()=>{setCurrentWeb("registration")}}>Зарегистрироваться</a>
             </div>
 
             <div className={classes.foot}></div>
