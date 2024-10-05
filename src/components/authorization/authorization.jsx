@@ -1,7 +1,6 @@
 import classes from "./Authorization.module.css"
-import Gmail_logo from '../../images/gmail_logo.png'
-import Mail_ya_logo from '../../images/vk_logo.png'
-import VK_logo from '../../images/mail-ya_logo.png'
+import Gmail_logo from '../../images/icons8-gmail-48.png'
+import VK_logo from '../../images/icons8-vk-48.png'
 
 export default function Authorization() {
     return (
@@ -29,11 +28,12 @@ export default function Authorization() {
                     <img className={classes.img} src={Gmail_logo} alt={'252352'}/>
                 </a>
                 <a className={classes.a} href="https://ya.ru">
-                    <img className={classes.img} src={VK_logo} alt={'2222222'}/>
+                    <img className={classes.img + ' ' + classes.vk} src={VK_logo} alt={'2222222'}/>
                 </a>
-                <a className={classes.a} href="https://ya.ru">
-                    <img className={classes.img} src={Mail_ya_logo} alt={'111111'}/>
-                </a>
+            </div>
+
+            <div className={classes.register}>
+                Ещё нет аккаунта?<a> Зарегистрироваться</a>
             </div>
 
             <div className={classes.foot}></div>

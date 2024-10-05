@@ -1,6 +1,6 @@
 .main_part_of_authorization{
     background-color: #1F1F1F;
-
+    font-family: Poppins, sans-serif;
     margin-top: 110px;
     margin-left: 62.5px;
     height: 350px;
@@ -56,13 +56,14 @@
 .forgot_pass{
     font-size: 9px;
     text-align: right;
-    padding-top: 35px;
+    padding-top: 15px;
     padding-right: 35px;
     color: #999999;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .button{
+    font-family: Poppins, sans-serif;
     background-color: #6EADFF;
     color: #ffffff;
     width: 207px;
@@ -75,6 +76,7 @@
 }
 
 .text_user{
+    font-family: Poppins, sans-serif;
     font-size: 7px;
     text-align: center;
     text-wrap: balance;
@@ -91,6 +93,7 @@
 }
 
 .entrance{
+    font-family: Poppins, sans-serif;
     font-size: 13px;
     text-align: center;
     color: #999999;
@@ -108,10 +111,26 @@
 .img{
     width: 25px;
     height: 25px;
-    object-fit: cover;
-    padding: 5px;
+    background-color: #1F1F1F;
+    border-radius: 10%;
+    padding: 3px;
 }
 
+.vk {
+    margin-left: 15px;
+}
+
+.register{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    margin-top: 25px;
+}
+
+.register a{
+    color: #6EADFFB2;
+}
 
 .foot{
     position: fixed;
@@ -123,3 +142,4 @@
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
+
