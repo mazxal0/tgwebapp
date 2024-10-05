@@ -48,10 +48,10 @@ export default function Registration() {
                 </div>
             </div>
 
-            <div>
-                Уже есть аккаунт?
-                <Link to={'/'} >Войти</Link>
-            </div>
+            <span className={classes.foot}>
+                <h4 className={classes.h4}>Уже есть аккаунт?</h4>
+                <Link to={'/'} className={classes.link}>Войти</Link>
+            </span>
 
         </div>
     )

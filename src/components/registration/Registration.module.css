@@ -87,3 +87,41 @@
 .a{
     color: #919191;
 }
+
+.fast_reg{
+    margin-top: 4.5em;
+    font-size: 0.6em;
+    color: #919191;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 35px;
+    height: 35px;
+    background-color: #1F1F1F;
+    border-radius: 10%;
+    padding: 3px;
+}
+
+.vk {
+    margin-left: 15px;
+}
+
+.foot{
+    display: flex;
+    margin: auto;
+}
+
+.h4{
+    color: #919191;
+    font-size: 0.5em;
+}
+
+.link{
+    color: #6EADFF;
+    font-size: 0.5em;
+}
