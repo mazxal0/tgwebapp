@@ -29,8 +29,8 @@
     background-color: #2e2e2e;
     padding: 5px;
     border-radius: 4px;
-    width: 180px;
-    height: 15px;
+    width: 200px;
+    height: 20px;
     align-self: center;
     color: #C9C9C999;
     outline: none;
@@ -44,8 +44,8 @@
     background-color: #2e2e2e;
     padding: 5px;
     border-radius: 4px;
-    width: 180px;
-    height: 15px;
+    width: 200px;
+    height: 20px;
     align-self: center;
     margin-top: 15px;
     opacity: 100%;
@@ -78,12 +78,11 @@
 }
 
 .text_user{
-    font-family: Poppins, sans-serif;
     font-size: 7px;
     text-align: center;
     text-wrap: balance;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-top: 20px;
     word-spacing: normal;
     color: #919191;
@@ -94,14 +93,11 @@
 }
 
 .entrance{
-    font-family: Poppins, sans-serif;
     font-size: 13px;
     text-align: center;
     color: #999999;
-    margin-top: 25px;
-    text-decoration: none;
+    margin-top: 0;
 }
-
 
 
 .logos{
@@ -122,10 +118,9 @@
 }
 
 .register{
-    color: white;
+    color: #C9C9C9;
     font-size: 10px;
     text-align: center;
-    font-family: Poppins, sans-serif;
     margin-top: 25px;
 }
 
