@@ -4,39 +4,22 @@ import Header from "./components/header/header";
 import Authorization from "./components/authorization/authorization";
 import Registration from "./components/registration/Registration";
 
-import {useEffect, useState} from 'react';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 export default function App() {
-    const [currentWeb, setCurrentWeb] = useState('authorization');
 
-    const setWeb = (newWeb) => {
-        setCurrentWeb(newWeb);
-    }
-
-    useEffect(() => {
-        setCurrentWeb('registration');
-    }, []);
-
-    const render = () => {
-        switch (currentWeb) {
-            case 'authorization':
-                return <Authorization setWeb={setWeb}/>;
-            case 'registration':
-                return <Registration/>;
-            default:
-                return null
-        }
-    }
 
 
     return (
-    <div>
-        <Header />
-        {/*{currentWeb !== 'authorization' && currentWeb !== 'registation' ? <Footer /> : null}*/}
-        {render()}
-        {currentWeb !== 'authorization' && currentWeb !== 'registation' ? <Footer /> : null}
-    </div>
+
+        <Router>
+            <Routes>
+                <Route path="/" element={<Authorization />}></Route>
+                <Route path={"/registration"} element={<Registration />}></Route>
+            </Routes>
+        </Router>
+
+
   );
 }

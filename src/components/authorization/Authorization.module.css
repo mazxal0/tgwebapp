@@ -1,13 +1,11 @@
 .main_part_of_authorization{
     background-color: #1F1F1F;
     font-family: Poppins, sans-serif;
-    margin-top: 110px;
-    margin-left: 62.5px;
-    height: 320px;
-    width: 250px;
+    margin-top: 8em;
+    margin-left: 1.75em;
+    height: 25em;
+    width: 20em;
     border-radius: 15px;
-
-
 }
 
 .form_of_user {
@@ -19,9 +17,9 @@
     color: white;
     text-align: center;
     margin-top: 0.5%;
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 25px;
+    font-size: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .name{
@@ -29,12 +27,12 @@
     background-color: #2e2e2e;
     padding: 5px;
     border-radius: 4px;
-    width: 200px;
-    height: 20px;
+    width: 25em;
+    height: 3em;
     align-self: center;
     color: #C9C9C999;
     outline-color: #6EADFF;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -44,46 +42,48 @@
     background-color: #2e2e2e;
     padding: 5px;
     border-radius: 4px;
-    width: 200px;
-    height: 20px;
+    width: 25em;
+    height: 3em;
     align-self: center;
-    margin-top: 15px;
+    margin-top: 2em;
     opacity: 100%;
     color: #C9C9C999;
     outline-color: #6EADFF;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
 }
 
 .forgot_pass{
-    font-size: 9px;
+    font-size: 0.8em;
     text-align: right;
-    padding-top: 15px;
-    padding-right: 35px;
+    padding-top: 2em;
+    padding-right: 1em;
     color: #999999;
     padding-bottom: 30px;
 }
 
 .button{
     font-family: Poppins, sans-serif;
+    font-size: 0.85em;
     background-color: #6EADFF;
     color: #ffffff;
-    width: 207px;
-    height: 32px;
+    width: 22em;
+    height: 4em;
     align-self: center;
     border: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 1em;
+    margin-top: 1em;
     margin-bottom: 0;
+    padding: 0.5em;
 }
 
 .text_user{
-    font-size: 7px;
+    font-size: 0.6em;
     text-align: center;
     text-wrap: balance;
     margin-top: 0;
-    margin-bottom: 40px;
-    padding-top: 10px;
+    margin-bottom: 3em;
+    padding-top: 1.5em;
     word-spacing: normal;
     color: #919191;
 }
@@ -129,14 +129,4 @@
     text-decoration: none;
 }
 
-.foot{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 375px;
-    height: 20px;
-    background-color: #1F1F1F;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
 

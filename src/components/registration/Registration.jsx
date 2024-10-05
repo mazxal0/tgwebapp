@@ -1,54 +1,58 @@
-import React from 'react';
-import styles from './Registration.module.css';
-import gmailLogo from '../../images/icons8-gmail-48.png';
-import vkLogo from '../../images/icons8-vk-48.png';
+import classes from './Registration.module.css'
+import Gmail_logo from '../../images/icons8-gmail-48.png'
+import VK_logo from '../../images/icons8-vk-48.png'
 
-export default function Registration ({setWeb}) {
+import {Link} from 'react-router-dom'
+
+export default function Registration() {
     return (
-        <div className={styles.container}>
-            <div className={styles.formContainer}>
-                <img src="/logo.png" alt="RUseen" className={styles.logo} />
-                <h2 className={styles.title}>Регистрация</h2>
+        <div className={classes.container}>
+            <h6 className={classes.name_of_company}>
+                <div className={classes.RU}>RU</div>
+                seen
+            </h6>
+            <h2 className={classes.registration}>Регистрация</h2>
 
-                <form>
-                    <input
-                        type="text"
-                        placeholder="Фамилия Имя"
-                        className={styles.inputField}
-                    />
-                    <input type="email" placeholder="Почта" className={styles.inputField} />
-                    <input type="password" placeholder="Пароль" className={styles.inputField} />
-                    <input
-                        type="password"
-                        placeholder="Подтверждение пароля"
-                        className={styles.inputField}
-                    />
-
-                    <label className={styles.checkboxContainer}>
-                        <input type="checkbox" />
-                        Запомнить меня?
-                    </label>
-
-                    <button className={styles.submitButton}>Зарегистрироваться</button>
-                </form>
-
-                <p className={styles.agreementText}>
-                    Продолжая пользоваться аккаунтом, вы принимаете Условия использования и подтверждаете, что ознакомились с документом <span>Политика конфиденциальности</span>.
-                </p>
-
-                <div className={styles.socialLogin}>
-                    <p className={styles.socialLoginText}>Зарегистрироваться через</p>
-                    <div className={styles.socialIcons}>
-                        <img src={gmailLogo} alt="Gmail" className={styles.icon} />
-                        <img src={vkLogo} alt="VK" className={styles.icon} />
-                    </div>
-                </div>
-
-                <p className={styles.loginLink}>
-                    Уже есть аккаунт? <a href="#" onClick={() => setWeb('authorization')} >Войти</a>
-                </p>
+            <div className={classes.form_of_registration}>
+                <input placeholder={'Имя Фамилия'} className={classes.input}/>
+                <input type="email" placeholder={'Почта'} className={classes.input}/>
+                <input type="password" placeholder={'Пароль'} className={classes.input}/>
+                <input type="password" placeholder={'Подтверждение пароля'} className={classes.input}/>
             </div>
-        </div>
-    );
-};
 
+            <div className={classes.remember}>
+                <input type={'checkbox'} className={classes.remember_checkbox}/>
+                <h5 className={classes.remember_text}> Запомнить меня?</h5>
+            </div>
+
+            <button className={classes.btn}>
+                Зарегистрироваться
+            </button>
+
+            <h6 className={classes.text_user}>Продолжая пользоваться, Вы
+                принимаете <strong><a href="https://ya.ru" className={classes.a}>Условия пользования</a></strong> и
+                подтверждаете,
+                что ознакомились с документом "<a href="https://ya.ru" className={classes.a}>Политика
+                    конфидиальности</a>".
+            </h6>
+
+            <div>
+                <h3 className={classes.fast_reg}>Зарегистрироваться через</h3>
+                <div className={classes.logos}>
+                    <a className={classes.a} href="https://ya.ru">
+                        <img className={classes.img} src={Gmail_logo} alt={'252352'}/>
+                    </a>
+                    <a className={classes.a} href="https://ya.ru">
+                        <img className={classes.img + ' ' + classes.vk} src={VK_logo} alt={'2222222'}/>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                Уже есть аккаунт?
+                <Link to={'/'} >Войти</Link>
+            </div>
+
+        </div>
+    )
+}

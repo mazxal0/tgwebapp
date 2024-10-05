@@ -1,8 +1,9 @@
 import classes from "./Authorization.module.css"
 import Gmail_logo from '../../images/icons8-gmail-48.png'
 import VK_logo from '../../images/icons8-vk-48.png'
+import {Link} from "react-router-dom";
 
-export default function Authorization({currentWeb, setCurrentWeb}) {
+export default function Authorization() {
     return (
         <div className={classes.main_part_of_authorization}>
 
@@ -33,10 +34,10 @@ export default function Authorization({currentWeb, setCurrentWeb}) {
             </div>
 
             <div className={classes.register}>
-                Ещё нет аккаунта? <a href="#" onClick={()=>{setCurrentWeb("registration")}}>Зарегистрироваться</a>
+                Ещё нет аккаунта? <Link to={'/registration'}>Зарегистрироваться</Link>
             </div>
 
-            <div className={classes.foot}></div>
+
         </div>
     )
 
