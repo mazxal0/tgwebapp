@@ -49,8 +49,8 @@ export default function Registration() {
             </div>
 
             <span className={classes.foot}>
-                <h4 className={classes.h4}>Уже есть аккаунт?</h4>
-                <Link to={'/'} className={classes.link}>Войти</Link>
+                <h4 className={classes.h4}>Уже есть аккаунт? <Link to={'/'} className={classes.link}> Войти</Link></h4>
+
             </span>
 
         </div>
