@@ -1,13 +1,13 @@
 import ItemForSurvey from "../ItemsForSurvey/ItemForSurvey";
 import {surveyItems} from '../ItemsForSurvey/informations'
-import classes from './PageSurvey.module.css'
+import classes from './PageSurvey1.module.css'
 
 import React from "react";
 import {useState} from 'react'
 
 
 
-export default function PageSurvey(){
+export default function PageSurvey1({onChangeSurvey}){
 
     const allValues = [];
 
@@ -37,10 +37,11 @@ export default function PageSurvey(){
         if(currentPage < surveyItems.length - 1) {
             setCurrentPage(currentPage + 1);
             allValues.push(values);
+            setOnViewButton(false);
             setValues([]);
         }
         else{
-            console.log("THE END");
+            onChangeSurvey();
         }
     }
 
