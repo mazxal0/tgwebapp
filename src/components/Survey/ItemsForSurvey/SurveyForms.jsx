@@ -1,3 +1,5 @@
+import classes from './SurveyForms.module.css'
+
 const styleFormOfSurvey = {
     div: {
         display: 'grid',
@@ -6,7 +8,8 @@ const styleFormOfSurvey = {
             "title"
             "textArea"
         `,
-        gridTemplateColumns: 'minmax()',
+        gridTemplateColumns: '90%',
+
         marginTop: '0',
         marginBottom: '0',
     },
@@ -19,27 +22,18 @@ const styleFormOfSurvey = {
         justifyItems: 'center',
         marginTop: '2em',
         marginBottom: '0',
+
     },
-    textarea: {
-        gridArea: 'textarea',
-        marginTop: '2em',
-        border: 'none',
-        backgroundColor: '#1F1F1F',
-        padding: '0.5em 0 0 0.5em',
-        //marginLeft: '5.5em',
-        justifyItems: 'center',
-        resize: 'none',
-        width: '26em',
-        height: '10em',
-        borderRadius: '1em',
-    },
+
+
+
     form: {
         justifySelf: 'center',
     }
 }
 
 
-export default function SurveyForms({title, exampleText}) {
+export default function SurveyForms({title, exampleText, onChangeValuesOfArea}) {
     return (
         <div style={styleFormOfSurvey.div}>
             <h3 style={styleFormOfSurvey.h3}>
@@ -48,8 +42,9 @@ export default function SurveyForms({title, exampleText}) {
             <form style={styleFormOfSurvey.form}>
 
                     <textarea
-                        style={styleFormOfSurvey.textarea}
+                        className={classes.textarea}
                         placeholder={exampleText}
+                        onChange={onChangeValuesOfArea}
                     />
             </form>
 

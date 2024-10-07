@@ -1,0 +1,25 @@
+.textarea {
+    grid-area: textarea;
+    margin-top: 2em;
+    border: none;
+    background-color: #1F1F1F;
+    overflow: hidden;
+    padding: 1.5em 1em 0 1em;
+    justify-items: center;
+    resize: none;
+    width: 26em;
+    height: 10em;
+    border-radius: 1em;
+    color: white;
+    font-family: Inter sans-serif;
+    outline: none;
+
+}
+
+.textarea::placeholder {
+    color: #919191;
+}
+
+.textarea:focus {
+    outline: 3px solid #6EADFF;
+}
