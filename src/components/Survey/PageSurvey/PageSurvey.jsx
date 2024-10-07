@@ -1,20 +1,11 @@
-import ItemForSurvey from "./ItemForSurvey";
-import {survey_1} from './informations'
+import ItemForSurvey from "../ItemsForSurvey/ItemForSurvey";
+import {survey_1} from '../ItemsForSurvey/informations'
+import classes from './PageSurvey.module.css'
+
 import React from "react";
 import {useState} from 'react'
 
-const styleTitle = {
-    color: '#FFFFFF',
-    textAlign: 'center',
-    fontSize: '1em',
-    marginTop: '6em',
-    marginBottom: '3em'
-}
 
-const styleButton = {
-    display: 'flex',
-    justifySelf: 'center',
-}
 
 export default function PageSurvey(){
 
@@ -41,12 +32,12 @@ export default function PageSurvey(){
     }
 
     return (
-        <>
-            <h2 style={styleTitle}>Выберите вид путешествия</h2>
+        <div className={classes.container}>
+            <h2 className={classes.styleTitle}>Выберите вид путешествия</h2>
             {survey_1.text.map((text) => (
                 <ItemForSurvey key={text} text={text} onChangeValues={onChangeValues} />
             ))}
-            {onViewButton && <button style={styleButton}>Далее</button>}
-        </>
+            {onViewButton && <button className={classes.styleButton}>Далее</button>}
+        </div>
     )
 }
