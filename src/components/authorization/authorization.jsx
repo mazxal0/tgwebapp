@@ -14,7 +14,7 @@ export default function Authorization() {
                 <input className={classes.name} placeholder="Имя пользователя"/>
                 <input type="password" className={classes.pass} placeholder="Пароль"/>
                 <a className={classes.forgot_pass} href="https://ya.ru">Забыли пароль?</a>
-                <button className={classes.button}>Войти</button>
+                <Link to={'/startSurvey'}><button className={classes.button}>Войти</button></Link>
             </div>
             <h6 className={classes.text_user}>Продолжая пользоваться, Вы
                 принимаете <strong><a href="https://ya.ru" className={classes.a}>Условия пользования</a></strong> и подтверждаете,

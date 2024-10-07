@@ -5,6 +5,9 @@ import VK_logo from '../../images/icons8-vk-48.png'
 import {Link} from 'react-router-dom'
 
 export default function Registration() {
+
+
+
     return (
         <div className={classes.container}>
             <h6 className={classes.name_of_company}>
