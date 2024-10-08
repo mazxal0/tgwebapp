@@ -60,7 +60,7 @@ export default function Authorization() {
                         <button className={classes.buttonOfImage}
                                 type='button'
                                 onClick={() => setIsVisiblePassword(!isVisiblePassword)}>
-                            <img className={classes.eyeImage} src={isVisiblePassword ? NotView : View}/>
+                            <img className={classes.eyeImage} src={isVisiblePassword ? NotView : View} alt={isVisiblePassword ? 'Hide' : 'Show'}/>
                         </button>
 
                     </div>
