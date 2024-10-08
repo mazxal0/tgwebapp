@@ -1,132 +1,125 @@
-.main_part_of_authorization{
-    background-color: #1F1F1F;
-    font-family: Poppins, sans-serif;
-    margin-top: 8em;
-    margin-left: 1.75em;
-    height: 25.5em;
-    width: 20em;
-    border-radius: 15px;
-}
-
-.form_of_user {
-    display: flex;
-    flex-direction: column;
-}
-
-.h1{
+.mainContainer {
     color: white;
-    text-align: center;
-    margin-top: 0.5%;
-    font-size: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-.name{
-    border: none;
-    background-color: #2e2e2e;
-    padding: 5px;
-    border-radius: 4px;
-    width: 25em;
-    height: 3em;
-    align-self: center;
-    color: #C9C9C999;
-    outline-color: #6EADFF;
-    font-size: 12px;
-    text-align: center;
-}
-
-
-.pass{
-    border: none;
-    background-color: #2e2e2e;
-    padding: 5px;
-    border-radius: 4px;
-    width: 25em;
-    height: 3em;
-    align-self: center;
-    margin-top: 2em;
-    opacity: 100%;
-    color: #C9C9C999;
-    outline-color: #6EADFF;
-    font-size: 12px;
-    text-align: center;
-}
-
-.forgot_pass{
-    font-size: 0.8em;
-    text-align: right;
-    padding-top: 2em;
-    padding-right: 1em;
-    color: #999999;
-    padding-bottom: 30px;
-}
-
-.button{
-    font-family: Poppins, sans-serif;
-    font-size: 0.85em;
-    background-color: #6EADFF;
-    color: #ffffff;
-    width: 22em;
-    height: 4em;
-    align-self: center;
-    border: none;
-    border-radius: 1em;
-    margin-top: 1em;
-    margin-bottom: 0;
-    padding: 0.5em;
-}
-
-.text_user{
-    font-size: 0.6em;
-    text-align: center;
-    text-wrap: balance;
-    margin-top: 0;
-    margin-bottom: 3em;
-    padding-top: 1.5em;
-    word-spacing: normal;
-    color: #919191;
-}
-
-.a{
-    color: #919191;
-}
-
-.entrance{
-    font-size: 13px;
-    text-align: center;
-    color: #999999;
-    margin-top: 0;
-}
-
-
-.logos{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 5em;
 }
 
-.img{
-    width: 35px;
-    height: 35px;
-    background-color: #1F1F1F;
-    border-radius: 10%;
-    padding: 3px;
+.container {
+    background-color: #2e2e2e;
+    width: 25em;
+    height: 26.5em;
+    border-radius: 2em;
 }
 
-.vk {
-    margin-left: 15px;
-}
-
-.register{
-    color: #C9C9C9;
-    font-size: 10px;
+.p {
     text-align: center;
-    margin-top: 25px;
 }
 
-.register a{
+.h3 {
+    text-align: center;
+}
+
+.input {
+    width: 90%;
+    height: 2.5em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    padding: 0 0 0 1em;
+    color: white;
+}
+
+.input::placeholder {
+    color: #C9C9C9;
+}
+
+.input:focus {
+    border: none;
+    border-radius: 0.5em;
+    outline: 3px solid #6EADFF;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.divOfErrorOrForgotPass {
+    display: block;
+    /*grid-template-columns: 0.5fr 5fr 5fr 0.5fr;*/
+}
+
+.wrongData {
+    color: red;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.8em;
+}
+
+.h10 {
+    display: flex;
+    justify-content: end;
+    color: #999999;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.divOfButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.button {
+    background-color: #6EADFF;
+    border: none;
+    width: 16em;
+    height: 3em;
+    font-size: 1.1em;
+    padding: 1em 5em 1em 5em;
+    border-radius: 1em;
+}
+
+.termsOfUse {
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 1em;
+}
+
+.h6 {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 0;
+    color: #999999;
+    font-size: 1em;
+}
+
+.imageBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.6em;
+}
+
+.imageLink {
+    padding: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.h4 {
+    text-align: center;
+}
+
+.linkToRegistration {
     color: #6EADFFB2;
     text-decoration: none;
 }
-
-

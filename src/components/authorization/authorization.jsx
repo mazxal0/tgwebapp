@@ -1,44 +1,88 @@
 import classes from "./Authorization.module.css"
 import Gmail_logo from '../../images/icons8-gmail-48.png'
 import VK_logo from '../../images/icons8-vk-48.png'
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {useState} from "react";
 
 export default function Authorization() {
+
+    const [userName, setUserName] = useState('')
+    const [userPassword, setUserPassword] = useState('')
+    const [isWrongdata, setIsWrongdata] = useState(false);
+    const navigate = useNavigate();
+
+    const onChangeName = (event) => {
+        setUserName(event.target.value)
+    }
+
+    const onChangePassword = (event) => {
+        setUserPassword(event.target.value)
+    }
+
+    const onAuthorization = () => {
+        const data = ['user', 'pass'];
+        if(data[0] !== userName || data[1] !== userPassword){
+            setIsWrongdata(true);
+        }
+        else{
+            navigate('/startSurvey');
+        }
+    }
+
     return (
-        <div className={classes.main_part_of_authorization}>
+        <main className={classes.mainContainer}>
+            <div className={classes.container}>
+                <p className={classes.p}>
+                    RUseen
+                </p>
+                <h3 className={classes.h3}>Вход</h3>
+                <form className={classes.forms}>
 
-            <h1 className={classes.h1}>
-                Вход
-            </h1>
-            <div className={classes.form_of_user}>
-                <input className={classes.name} placeholder="Имя пользователя"/>
-                <input type="password" className={classes.pass} placeholder="Пароль"/>
-                <a className={classes.forgot_pass} href="https://ya.ru">Забыли пароль?</a>
-                <Link to={'/startSurvey'}><button className={classes.button}>Войти</button></Link>
+                    <input
+                        className={classes.input}
+                        type={'text'}
+                        placeholder={'Имя пользователя'}
+                        onChange={onChangeName}
+                    />
+
+                    <input
+                        className={classes.input}
+                        type={'password'}
+                        placeholder={'Пароль'}
+                        onChange={onChangePassword}
+                    />
+
+                </form>
+                <div className={classes.divOfErrorOrForgotPass}>
+                    {isWrongdata ? <strong>
+                        <h10 className={classes.wrongData}>Неправильные данные</h10>
+                    </strong> : null}
+                    <h10 className={classes.h10}>Забыли пароль?</h10>
+
+                </div>
+                <div className={classes.divOfButton}>
+                    <button
+                        className={classes.button}
+                        onClick={onAuthorization}>
+                        Вход
+                    </button>
+                </div>
+                <p className={classes.termsOfUse}>
+                    Продолжая пользоваться аккаунтом,
+                    вы принимаете Условия использования и подтверждаете,
+                    что ознакомились с документом «Политика конфиденциальности».
+                </p>
+
+                <h6 className={classes.h6}>Войти через</h6>
+                <div className={classes.imageBox}>
+                    <img className={classes.imageLink} src={Gmail_logo} alt={'Gmail'} />
+                    <img className={classes.imageLink} src={VK_logo} alt={'VK'} />
+                </div>
+
+                <h4 className={classes.h4}>Ещё нет аккаунта? <Link className={classes.linkToRegistration} to={'registration'}>Зарегистрироваться</Link></h4>
             </div>
-            <h6 className={classes.text_user}>Продолжая пользоваться, Вы
-                принимаете <strong><a href="https://ya.ru" className={classes.a}>Условия пользования</a></strong> и подтверждаете,
-                что ознакомились с документом "<a href="https://ya.ru" className={classes.a}>Политика
-                    конфидиальности</a>".
-            </h6>
+        </main>
 
-            <h3 className={classes.entrance}>Войти через</h3>
-
-            <div className={classes.logos}>
-                <a className={classes.a} href="https://ya.ru">
-                    <img className={classes.img} src={Gmail_logo} alt={'252352'}/>
-                </a>
-                <a className={classes.a} href="https://ya.ru">
-                    <img className={classes.img + ' ' + classes.vk} src={VK_logo} alt={'2222222'}/>
-                </a>
-            </div>
-
-            <div className={classes.register}>
-                Ещё нет аккаунта? <Link to={'/registration'}>Зарегистрироваться</Link>
-            </div>
-
-
-        </div>
     )
 
 }
