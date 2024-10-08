@@ -1,6 +1,8 @@
 import classes from "./Authorization.module.css"
 import Gmail_logo from '../../images/icons8-gmail-48.png'
 import VK_logo from '../../images/icons8-vk-48.png'
+import View from '../../images/view.png'
+import NotView from '../../images/notView.png'
 import {Link, useNavigate} from "react-router-dom";
 import {useState} from "react";
 
@@ -10,6 +12,9 @@ export default function Authorization() {
     const [userPassword, setUserPassword] = useState('')
     const [isWrongdata, setIsWrongdata] = useState(false);
     const navigate = useNavigate();
+
+    const [classOfStyleOfTextOfLoginVia, setClassOfStyleOfTextOfLoginVia] = useState(classes.h6);
+    const [isVisiblePassword, setIsVisiblePassword] = useState(false);
 
     const onChangeName = (event) => {
         setUserName(event.target.value)
@@ -23,6 +28,7 @@ export default function Authorization() {
         const data = ['user', 'pass'];
         if(data[0] !== userName || data[1] !== userPassword){
             setIsWrongdata(true);
+            setClassOfStyleOfTextOfLoginVia(classes.h6Other)
         }
         else{
             navigate('/startSurvey');
@@ -44,13 +50,18 @@ export default function Authorization() {
                         placeholder={'Имя пользователя'}
                         onChange={onChangeName}
                     />
-
+                    <div>
                     <input
                         className={classes.input}
-                        type={'password'}
+                        type={isVisiblePassword ? 'text' : 'password'}
                         placeholder={'Пароль'}
                         onChange={onChangePassword}
                     />
+                    <button onClick={() => setIsVisiblePassword(!isVisiblePassword)}>
+                        <img className={classes.eyeImage} src={isVisiblePassword ? View : NotView}/>
+                    </button>
+
+                    </div>
 
                 </form>
                 <div className={classes.divOfErrorOrForgotPass}>
@@ -73,7 +84,7 @@ export default function Authorization() {
                     что ознакомились с документом «Политика конфиденциальности».
                 </p>
 
-                <h6 className={classes.h6}>Войти через</h6>
+                <h6 className={classOfStyleOfTextOfLoginVia}>Войти через</h6>
                 <div className={classes.imageBox}>
                     <img className={classes.imageLink} src={Gmail_logo} alt={'Gmail'} />
                     <img className={classes.imageLink} src={VK_logo} alt={'VK'} />

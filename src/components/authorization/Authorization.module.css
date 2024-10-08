@@ -8,7 +8,7 @@
 
 .container {
     background-color: #2e2e2e;
-    width: 25em;
+    width: 24em;
     height: 26.5em;
     border-radius: 2em;
 }
@@ -25,20 +25,29 @@
     width: 90%;
     height: 2.5em;
     background-color: transparent;
+    outline: 2px solid #FFFFFF;
+    border-radius: 0.5em;
     border: none;
-    border-bottom: 2px solid #FFFFFF;
     padding: 0 0 0 1em;
     color: white;
 }
 
 .input::placeholder {
     color: #C9C9C9;
+    border: none;
 }
 
 .input:focus {
-    border: none;
     border-radius: 0.5em;
-    outline: 3px solid #6EADFF;
+    outline: 2px solid #6EADFF;
+    height: 2.5em;
+    padding: 0 0 0 1em;
+}
+
+.eyeImage {
+    background-color: transparent;
+    width: 1em;
+    height: 1em;
 }
 
 .forms {
@@ -98,6 +107,14 @@
 .h6 {
     text-align: center;
     margin-top: 4em;
+    margin-bottom: 0;
+    color: #999999;
+    font-size: 1em;
+}
+
+.h6Other {
+    text-align: center;
+    margin-top: 2.48em;
     margin-bottom: 0;
     color: #999999;
     font-size: 1em;
