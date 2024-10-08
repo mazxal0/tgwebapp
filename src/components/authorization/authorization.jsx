@@ -39,7 +39,7 @@ export default function Authorization() {
         <main className={classes.mainContainer}>
             <div className={classes.container}>
                 <p className={classes.p}>
-                    RUseen
+                    <span className={classes.RU}>RU</span>seen
                 </p>
                 <h3 className={classes.h3}>Вход</h3>
                 <form className={classes.forms}>
@@ -50,16 +50,18 @@ export default function Authorization() {
                         placeholder={'Имя пользователя'}
                         onChange={onChangeName}
                     />
-                    <div>
-                    <input
-                        className={classes.input}
-                        type={isVisiblePassword ? 'text' : 'password'}
-                        placeholder={'Пароль'}
-                        onChange={onChangePassword}
-                    />
-                    <button onClick={() => setIsVisiblePassword(!isVisiblePassword)}>
-                        <img className={classes.eyeImage} src={isVisiblePassword ? View : NotView}/>
-                    </button>
+                    <div className={classes.divOfPassword}>
+                        <input
+                            className={classes.input}
+                            type={isVisiblePassword ? 'text' : 'password'}
+                            placeholder={'Пароль'}
+                            onChange={onChangePassword}
+                        />
+                        <button className={classes.buttonOfImage}
+                                type='button'
+                                onClick={() => setIsVisiblePassword(!isVisiblePassword)}>
+                            <img className={classes.eyeImage} src={isVisiblePassword ? NotView : View}/>
+                        </button>
 
                     </div>
 
