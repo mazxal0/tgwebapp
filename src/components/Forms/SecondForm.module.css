@@ -1,0 +1,35 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.letter {
+    position: absolute;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0;
+    display: flex;
+    text-align: center;
+}
+
+.grinText {
+    color: #047500;
+    top: 130px;
+    font-size: 14px;
+}
+
+.redText {
+    color: #FF3B30;
+    top: 180px;
+    left: 25px;
+}
+
+.space {
+    margin: 72px 0 0 0;
+}

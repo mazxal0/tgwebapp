@@ -1,0 +1,50 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.p{
+    position: relative;
+    margin: 0 0 95px 35px;
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(130, 130, 130);
+    text-align: left;
+}
+
+
+.letter {
+    position: absolute;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0;
+    display: flex;
+    text-align: center;
+}
+
+.grinText {
+    color: #047500;
+    top: 155px;
+    font-size: 14px;
+}
+
+.redText {
+    color: #FF3B30;
+    top: 195px;
+    left: 25px;
+}

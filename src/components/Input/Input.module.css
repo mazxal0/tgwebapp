@@ -1,0 +1,22 @@
+.input {
+    width: 85vw;
+    height: 46px;
+    border-radius: 14px;
+    background-color: rgba(65, 65, 65, 0.6);
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 23px;
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(130, 130, 130);
+}
+
+.greenOutline {
+    outline: 2px solid #047500;
+}
+
+.redOutline {
+    outline: 2px solid #FF3B30;
+}

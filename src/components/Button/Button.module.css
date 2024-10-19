@@ -1,0 +1,30 @@
+.button {
+    border: none;
+    border-radius: 14px;
+    width: 90vw;
+    height: 56px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button.First:hover {
+    background-color: rgb(90, 110, 255);
+}
+
+.First {
+    background-color: rgb(110, 173, 255);
+}
+
+.button.Second:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Second {
+    background-color: transparent;
+    border: 2px solid rgb(72, 72, 72);
+}
+
